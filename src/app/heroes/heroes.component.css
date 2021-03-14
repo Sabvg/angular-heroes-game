@@ -1,0 +1,105 @@
+/* HeroesComponent's private CSS styles */
+
+.heroes {
+    margin: 0 0 2em 0;
+    list-style-type: none;
+    padding: 0;
+    width: 27em;
+}
+
+.heroes li {
+    position: relative;
+    cursor: pointer;
+    background-color: #EEE;
+    margin: .5em;
+    padding: .3em 0;
+    height: 1.6em;
+    border-radius: 4px;
+}
+
+.heroes li:hover {
+    color: #607D8B;
+    background-color: #DDD;
+    left: .1em;
+}
+
+.heroes a {
+    color: #333;
+    text-decoration: none;
+    position: relative;
+    display: block;
+}
+
+.heroes a:hover {
+    color: #607D8B;
+}
+
+.heroes .badge {
+    display: inline-block;
+    font-size: small;
+    color: white;
+    padding: 0.8em 0.7em 0 0.7em;
+    background-color: #405061;
+    line-height: 1em;
+    position: relative;
+    left: -1px;
+    top: -4px;
+    height: 1.8em;
+    min-width: 16px;
+    text-align: right;
+    margin-right: .8em;
+    border-radius: 4px 0 0 4px;
+}
+
+.heroes .power {
+    display: inline-block;
+    background-color: rgb(210, 230, 229);
+    text-align: center;
+    width: 110px;
+}
+
+.heroes .rank {
+    display: inline-block;
+    background-color: #014959;
+    color: #ffffff;
+    text-align: center;
+    width: 110px;
+}
+
+button {
+    display: block;
+    margin-top: 10px;
+    padding: 10px 15px;
+    background-color: lightblue;
+    border: none;
+    border-radius: 4px;
+    margin-bottom: 30px;
+}
+
+button:hover,
+button a:hover {
+    background-color: #cfd8dc;
+    cursor: pointer;
+}
+
+button.delete {
+    position: relative;
+    left: 375px;
+    top: -48px;
+    background-color: gray !important;
+    color: white;
+}
+
+.no-display {
+    display: none;
+}
+
+.resultRank {
+    background-color: #014959;
+    color: #ffffff;
+    padding: 20px;
+    border-radius: 5px;
+    max-width: 300px;
+    text-align: center;
+    margin-bottom: 20px;
+}

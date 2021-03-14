@@ -1,0 +1,107 @@
+.main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.create-hero {
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    justify-content: space-evenly;
+}
+
+.no-display {
+    display: none;
+}
+
+.hero-label input {
+    padding: 10px;
+    border: 1px solid lightgrey;
+    width: 100%;
+}
+
+.heroes {
+    margin: 0 0 2em 0;
+    list-style-type: none;
+    padding: 0;
+    width: 20em;
+}
+
+.heroes li {
+    position: relative;
+    cursor: pointer;
+    background-color: #EEE;
+    margin: .5em;
+    padding: .3em 0;
+    height: 1.6em;
+    border-radius: 4px;
+}
+
+.heroes li:hover {
+    color: #607D8B;
+    background-color: #DDD;
+    left: .1em;
+}
+
+.heroes a {
+    color: #333;
+    text-decoration: none;
+    position: relative;
+    display: block;
+    width: 250px;
+}
+
+.heroes a:hover {
+    color: #607D8B;
+}
+
+.heroes .badge {
+    display: inline-block;
+    font-size: small;
+    color: white;
+    padding: 0.8em 0.7em 0 0.7em;
+    background-color: #405061;
+    line-height: 1em;
+    position: relative;
+    left: -1px;
+    top: -4px;
+    height: 1.8em;
+    min-width: 16px;
+    text-align: right;
+    margin-right: .8em;
+    border-radius: 4px 0 0 4px;
+}
+
+.heroes .power {
+    background-color: rgb(210, 230, 229);
+}
+
+button {
+    display: block;
+    margin-top: 10px;
+    padding: 10px 15px;
+    background-color: lightblue;
+    border: none;
+    border-radius: 4px;
+    margin-bottom: 30px;
+}
+
+button:hover,
+button a:hover {
+    background-color: #cfd8dc;
+    cursor: pointer;
+}
+
+button.delete {
+    position: relative;
+    left: 270px;
+    top: -48px;
+    background-color: gray !important;
+    border-radius: 4px;
+    color: white;
+}
+
+input {
+    margin-bottom: 15px;
+}

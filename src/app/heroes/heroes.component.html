@@ -1,0 +1,20 @@
+<div class="main">
+
+    <h1>Hero Ranking</h1>
+    <p>Click on this button to see your position in the ranking:</p>
+    <button title="order hero" (click)="order()">RANKING</button>
+    <ul class="heroes">
+        <li *ngFor="let hero of heroes">
+            <a routerLink="/detail/{{hero.id}}">
+                <span class="badge">{{hero.id}}</span> {{hero.name}} <span class="power">POWER: {{hero.power}} </span> <span class="rank"> RANKING: {{hero.rank}}</span>
+            </a>
+            <button class="delete" title="delete hero" (click)="delete(hero)">x</button>
+        </li>
+    </ul>
+
+    <div id="result-rank" class="no-display resultRank"></div>
+
+    <div id="try" class="no-display">
+        <button>TRY AGAIN</button>
+    </div>
+</div>

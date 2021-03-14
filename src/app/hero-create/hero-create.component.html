@@ -1,0 +1,36 @@
+<div class="main">
+
+    <div class="header-create-hero">
+        <h1>Create your Hero</h1>
+    </div>
+
+    <div class="create-hero">
+
+        <div class="hero-label">
+            <label>Hero name:
+                
+            </label>
+            <input #heroName />
+
+            <button (click)="addHeroName(heroName.value); heroName.value=''">
+            ADD HERO
+          </button>
+        </div>
+    </div>
+    <div id="created"></div>
+
+    <button id="btn-power" class="no-display" (click)="getPower()">GET POWER</button>
+
+    <app-power id="app-power" class="no-display"></app-power>
+
+    <div id="showPower"></div>
+
+    <button id="btnAddPower" class="no-display" (click)="add('', undefined)">
+        ADD POWER
+    </button>
+
+    <div id="show"></div>
+
+    <button id="go-hero" class="no-display"><a routerLink="/heroes">SEE MY HERO IN RANKING</a></button>
+
+</div>
